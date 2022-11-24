@@ -4,41 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Landing Page Smartwatch</title>
 </head>
 <body>
-    <header>
+    <header class="container-header">
         <div class="logo">
             <img src="/imagens/logo.webp" alt="imglogo">
             <h1>Bonno</h1>
         </div>
 
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Características</a></li>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="container-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Características</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section>
-        <div class="container">
-            <div class="descricao">
-                <h1>O melhor relógio digital para seu dia a dia</h1>
-                <p>As horas podem ser todas iguais, mas o jeito que você olha para elas não.</p>
-                <div class="btn">
-                    <a href="#"><span>Buy Now</span></a>
-                </div>
+    <section id="home-area">
+        <div class="content">
+            <h1 class="title">O melhor relógio digital para seu dia a dia</h1>
+            <p class="subtitle">As horas podem ser todas iguais, mas o jeito que você olha para elas não.</p>
+            <div class="btn">
+                <a href="#"><span>Saiba mais..</span></a>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img class="img-banner" src="/imagens/smartwatch-design.webp" alt="smartwatch-design">
+        </div>
+    </section>
+
+    <section class="feature">
+        <div class="container-feature">
+            <div class="container-header-feature">
+                <h2>Por Que Bonno É Melhor</h2>
+                <p>Modelos touch screen com diversas funcionalidades para te auxiliar durante o dia.</p>
+            </div>
+        </div>
+
+        <div class="container-about-banner">
+            <div class="about-banner">
+                <img src="" alt="">
             </div>
 
-            <div class="banner">
-                <img src="/imagens/relogio.png" alt="relogio Smart">
-            </div>
+            <article class="about-colum">
+                <div class="container-box">
+                    <div class="block">
+                        <div class="box1">
+                            <div class="icon"></div>
+                            <h4>Design de alta qualidade</h4>
+                            <p>
+                                A impressionante tela AMOLED da pulseira parece flutuar, posicionada sobre uma pulseira altamente respirável,
+                                que envolve o pulso com facilidade. Molduras ultra estreitas delineiam o conteúdo da tela, mantendo o foco nos serviços e recursos que você ama.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="box2">
+                            <div class="icon"></div>
+                            <h4>Processador super rápido</h4>
+                            <p>
+                                modos de treino revigorantes cobrem as atividades que você mais gosta, e muito mais, desde corrida até ciclismo, passando pela natação... e yoga!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="box3">
+                            <div class="icon"></div>
+                            <h4>Use a tecnologia Letest</h4>
+                            <p>
+                                A bateria está mais do que preparada para lidar com viagens de negócios e de férias. Com duração de até 14 dias,
+                                em cenários de uso típico, e de até 10 dias em cenários de uso intensivo.
+                             </p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="box4">
+                            <div class="icon"></div>
+                            <h4>Interface Amigável</h4>
+                            <p>
+                                Com uma seleção de mais de 1.000 maravilhosas watch faces, e o design AOD que exibe informações importantes quando a tela está desligada,
+                                o brilho em seus olhos estará sempre a um vislumbre de distância!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
 </body>
