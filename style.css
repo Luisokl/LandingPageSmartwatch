@@ -8,7 +8,7 @@
 .container-header {
     display: flex;
     justify-content: space-around;
-    height: 10vh;
+    height: 15vh;
 }
 
 header .logo {
@@ -33,7 +33,7 @@ header nav ul {
 header nav ul li a {
     text-decoration: none;
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
@@ -41,7 +41,7 @@ header nav ul li a {
     height: 100vh;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -50,16 +50,16 @@ header nav ul li a {
 }
 
 #home-area div .title {
-    width: 500px;
-    font-size: 3.5rem;
+    width: 600px;
+    font-size: 4.2rem;
     font-weight: 800;
     font-family: 'Poppins', sans-serif;
 }
 
 #home-area div .subtitle {
-    width: 450px;
+    width: 550px;
     margin-top: 25px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 #home-area div.btn {
@@ -94,21 +94,50 @@ header nav ul li a {
 /* segunda sessão do site */
 
 section .container-feature {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
+div .container-header-feature h2 {
+    font-size: 2.3rem;
+    font-weight: 900;
+    text-align: center;
+}
+div .container-header-feature p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
 section div .container-about-banner {
+    height: 70vh;
+    position: relative;
+    width: 100%;
     display: flex;
+    justify-content: space-around;
 }
 
 div .about-banner img {
-    width: 400px;
+    position: relative;
+    top: 80px;
+    display: flex;
+    width: 350px;
+}
+
+article .container-box {
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 article.about-colum div .block {
+    margin: 20px;
+    height: 350px;
     width: 250px;
-    border: 2px solid black;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 25px;
 }
