@@ -8,18 +8,13 @@
 .container-header {
     display: flex;
     justify-content: space-around;
-    height: 20vh;
+    height: 10vh;
 }
 
 header .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-header .logo img {
-    height: 100px;
-    width: auto;
 }
 
 header .container-nav {
@@ -29,8 +24,10 @@ header .container-nav {
 }
 
 header nav ul {
+    width: 800px;
     list-style: none;
     display: flex;
+    justify-content: space-around;
 }
 
 header nav ul li a {
@@ -41,20 +38,26 @@ header nav ul li a {
 }
 
 #home-area {
+    height: 100vh;
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
+#home-area .content {
+    padding-right: 25px;
+}
+
 #home-area div .title {
-    width: 550px;
+    width: 500px;
     font-size: 3.5rem;
     font-weight: 800;
     font-family: 'Poppins', sans-serif;
 }
 
 #home-area div .subtitle {
+    width: 450px;
     margin-top: 25px;
     font-size: 1.2rem;
 }
@@ -71,7 +74,41 @@ header nav ul li a {
 }
 
 #home-area div img.img-banner {
-    width: 250px;
+    width: 400px;
     height: auto;
+    padding-right: 25px;
 }
 
+#home-area div img.img-banner {
+    animation: flutuacao 10s ease-in-out infinite;
+}
+@keyframes flutuacao{
+    0%, 100% { 
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+}
+
+/* segunda sessão do site */
+
+section .container-feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section div .container-about-banner {
+    display: flex;
+}
+
+div .about-banner img {
+    width: 400px;
+}
+
+article.about-colum div .block {
+    width: 250px;
+    border: 2px solid black;
+}
