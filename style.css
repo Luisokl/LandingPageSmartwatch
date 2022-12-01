@@ -221,6 +221,7 @@ section.about-product {
     top: 200px;
     height: 100vh;
     width: 100vw;
+    padding: 100px 0px;
 }
 
 section .container-product {
@@ -237,7 +238,7 @@ section div .container-product-title {
 section div .container-product-title h2 {
     font-family: 'Roboto'sans-serif;
     color: #242424;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     font-weight: 900;
     text-align: center;
 }
@@ -250,6 +251,48 @@ section div .container-product-title p {
 
 section div .container-product-banner {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
+
+.container-product-banner div li {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.container-product-banner div li .icon {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #5789ff;
+    margin-right: 20px;
+}
+
+.container-product-banner div li .content h4 {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sem serifa;
+}
+
+.container-product-banner div li .content p {
+    font-size: 1rem;
+    font-family: 'Poppins' sans-serif;
+    width: 500px;
+}
+
+section .container-product .about-banner {
+    position: relative;
+}
+section .container-product div img {
+    position: relative;
+    top: 0;
+    height: 450px;
+    padding: 0 100px;
+}
+
+/* Terceira sessão do site */
+
+section.feature {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
