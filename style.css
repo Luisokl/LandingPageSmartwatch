@@ -229,6 +229,18 @@ section .container-product {
     flex-direction: column;
 }
 
+section .container-product img {
+    animation: flutuacao 10s ease-in-out infinite;
+}
+@keyframes flutuacao{
+    0%, 100% { 
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+}
+
 section div .container-product-title {
     display: flex;
     justify-content: center;
@@ -244,20 +256,20 @@ section div .container-product-title h2 {
 }
 
 section div .container-product-title p {
-    margin-top: 20px;
+    margin: 20px 0;
     font-size: 1.2rem;
-    margin-bottom: 20px;
 }
 
 section div .container-product-banner {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 600px;
 }
 
 .container-product-banner div li {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .container-product-banner div li .icon {
@@ -269,7 +281,7 @@ section div .container-product-banner {
 
 .container-product-banner div li .content h4 {
     font-size: 1.2rem;
-    font-family: 'Poppins', sem serifa;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container-product-banner div li .content p {
@@ -290,9 +302,72 @@ section .container-product div img {
 
 /* Terceira sessão do site */
 
-section.feature {
+section.resource-product {
     height: 100vh;
     width: 100vw;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 0;
+}
+
+section .container-resource-feature {
+    display: flex;
+}
+
+section .resource-tittle h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #242424;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+section .resource-tittle p {
+    font-size: 1.2rem;
+    font-family: 'Poppins' sans-serif;
+    width: 600px;
+    margin-top: 20px;
+}
+
+section div .resource-content ul {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+}
+
+section div .resource-content .box-right {
+    padding-right: 50px;
+    text-align: right;
+}
+section div .resource-content .box-left {
+    padding-left: 50px;
+}
+
+section div .resource-content ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section div .resource-content ul li h4 {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+section div .resource-content ul li p {
+    font-size: 1.2rem;
+    font-family: 'Poppins' sans-serif;
+}
+
+section div .resource-content ul li ion-icon {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #5789ff;
+    margin: 0 30px;
 }
 
