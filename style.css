@@ -371,3 +371,96 @@ section div .resource-content ul li ion-icon {
     margin: 0 30px;
 }
 
+/* quarta sessão - carrosel de produtos */
+
+section .products-description h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #242424;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+section .products-description p {
+    font-size: 1.2rem;
+    font-family: 'Poppins' sans-serif;
+    margin-top: 15px;
+    text-align: center;
+}
+
+section .container-carrosel {
+    overflow: hidden;
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+    margin-top: 4rem;
+}
+
+.carrosel {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+.slide {
+    position: relative;
+    border: 2px solid #5789ff;
+    border-radius: 10px;
+    height: 75vh;
+    margin-right: 30px;
+}
+
+div .slide img {
+    height: 500px;
+    padding: 50px;
+}
+
+div .slide h1,p {
+    font-family: 'Poppins', sans-serif;
+    color: #242424;
+    font-size: 1.75rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 0;
+}
+
+div .slide a {
+    position: absolute;
+    left: 125px;
+    text-decoration: none;
+    padding: 20px 40px;
+    background-color: #5789ff;
+    border:  2px solid #5789ff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+div .slide a:hover {
+    background-color: #fff;
+    color: #5789ff;
+    transition:  .2s ease-in-out;
+}
+
+section .container-carrosel button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    opacity: 0.8;
+}
+
+section .container-carrosel .left-arrow {
+    left: 2rem;
+}
+section .container-carrosel .right-arrow {
+    right: 2rem;
+}
