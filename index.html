@@ -237,34 +237,35 @@
     </section>
 
     <section class="products-available">
-        <div class="products-description">
-            <h1>Nossos Produtos</h1>
-            <p>Confira alguns dos modelos disponíveis</p>
-        </div>
         <div class="container-carrosel">
-            <div class="carrosel">
-                <div class="slide">
+            <div class="products-description">
+                <h1>Nossos Produtos</h1>
+                <p>Confira alguns dos modelos disponíveis</p>
+            </div>
+
+            <div class="carrosel" id="carrosel">
+                <div class="slide" data-bg="cb021c">
                     <img src="/imagens/w1.png" alt="smartwatch-blue">
                     <h1>Smartwatch Blue</h1>
                     <p>R$ 199.00</p>
                     <a href="#">Compre Agora</a>
                 </div>
 
-                <div class="slide">
+                <div class="slide" data-bg="OD1BF4">
                     <img src="/imagens/w2.png" alt="smartwatch-black">
                     <h1>Smartwatch Black</h1>
                     <p>R$ 199.00</p>
                     <a href="#">Compre Agora</a>
                 </div>
 
-                <div class="slide">
+                <div class="slide" data-bg="44CAF9">
                     <img src="/imagens/w3.png" alt="smartwatch-golden">
                     <h1>Smartwatch Golden</h1>
                     <p>R$ 199.00</p>
                     <a href="#">Compre Agora</a>
                 </div>
 
-                <div class="slide">
+                <div class="slide" data-bg="3F4346">
                     <img src="/imagens/w4.png" alt="smartwatch-white">
                     <h1>Smartwatch white</h1>
                     <p>R$ 199.00</p>
@@ -272,13 +273,15 @@
                 </div>
             </div>
 
-            <button class="left-arrow" id="left">
-                <ion-icon name="arrow-back-circle-outline"></ion-icon>
-            </button>
+            <div class="carrosel-button">
+                <button class="left-arrow" id="left">
+                    <ion-icon name="arrow-back-circle-outline"></ion-icon>
+                </button>
 
-            <button class="right-arrow" id="right">
-                <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-            </button>
+                <button class="right-arrow" id="right">
+                    <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                </button>
+            </div>
         </div>
     </section>
 </body>

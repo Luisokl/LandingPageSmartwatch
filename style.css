@@ -388,79 +388,84 @@ section .products-description p {
     text-align: center;
 }
 
-section .container-carrosel {
+section .container-carrosel  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section .carrosel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     position: relative;
-    height: 80vh;
+    height: 70vh;
     width: 100vw;
-    margin-top: 4rem;
+    gap: 20px;
 }
 
-.carrosel {
+.carrosel .slide {
     display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateX(0);
-    transition: transform 0.4s ease-in-out;
-}
-
-.slide {
-    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
     border: 2px solid #5789ff;
     border-radius: 10px;
-    height: 75vh;
-    margin-right: 30px;
+    max-width: 350px;
+    height: 600px;
 }
 
-div .slide img {
-    height: 500px;
-    padding: 50px;
+.carrosel .slide img {
+    max-width: 250px;
+    height: auto;
 }
 
-div .slide h1,p {
+.carrosel .slide h1 {
     font-family: 'Poppins', sans-serif;
     color: #242424;
     font-size: 1.75rem;
-    font-weight: 500;
-    text-align: center;
-    padding: 10px 0;
+    font-weight: 600;
 }
 
-div .slide a {
-    position: absolute;
-    left: 125px;
-    text-decoration: none;
-    padding: 20px 40px;
-    background-color: #5789ff;
-    border:  2px solid #5789ff;
+.carrosel .slide p {
+    font-family: 'Poppins', sans-serif;
+    color: #242424;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.carrosel .slide a {
+    border: 1px solid #5789ff;
     border-radius: 5px;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 500;
-    margin-top: 40px;
-}
-
-div .slide a:hover {
-    background-color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
     color: #5789ff;
-    transition:  .2s ease-in-out;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
-section .container-carrosel button {
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    position: absolute;
-    top: 30%;
-    transform: translateY(-50%);
+.carrosel .slide a:hover {
+    background-color: #5789ff;
+    color: #fff;
+    transition: .2s ease-in-out;
+}
+
+.carrosel-button button {
+    border: transparent;
     font-size: 2.5rem;
-    opacity: 0.8;
+    cursor: pointer;
+    padding-left: 10px;
+    color: #5789ff;
 }
 
-section .container-carrosel .left-arrow {
-    left: 2rem;
-}
-section .container-carrosel .right-arrow {
-    right: 2rem;
-}
+
+
+
+
+
