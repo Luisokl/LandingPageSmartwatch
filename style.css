@@ -395,13 +395,13 @@ section .container-carrosel  {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
 }
 
 section .carrosel {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     position: relative;
     height: 70vh;
     width: 100vw;
@@ -464,7 +464,80 @@ section .carrosel {
     color: #5789ff;
 }
 
+/* sessão de contato */
 
+section.contact {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+form #name {
+    padding: 0 20px;
+    width: 500px;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid #5789ff;
+    color: #999;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+form #email {
+    padding: 0 20px;
+    width: 500px;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid #5789ff;
+    color: #999;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+form textarea {
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: 1px solid #5789ff;
+    color: #999;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #5789ff;
+    border: 2px solid #5789ff;
+    color: #fff;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-info h1 {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
+}
+
+.form-info h2 {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+.form-info div.cont {
+    display: flex;
+    margin-bottom: 10px;
+}
 
 
 
