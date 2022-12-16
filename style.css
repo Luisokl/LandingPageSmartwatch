@@ -8,14 +8,14 @@
 .container-header {
     display: flex;
     justify-content: space-around;
-    height: 10vh;
+    height: 8vh;
+    width: 100%;
 }
 
 header .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .container-header h1 {
@@ -140,21 +140,20 @@ header nav ul li a:hover {
 
 section.feature{
     position: relative;
-    padding: 50px 0;
 }
 
 section .container-feature {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 div .container-header-feature h2 {
-    font-family: 'Roboto'sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #242424;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 900;
     text-align: center;
 }
@@ -179,6 +178,7 @@ div .about-banner img {
     margin-right: 25px;
 }
 
+
 article .container-box {
     width: 700px;
     display: flex;
@@ -189,7 +189,7 @@ article .container-box {
 
 article.about-colum div .block {
     margin: 20px;
-    height: 370px;
+    height: 350px;
     width: 250px;
     border: 2px solid #5789ff;
     border-radius: 10px;
@@ -200,7 +200,6 @@ article.about-colum div .block:hover {
     color: #fff;
     transition: all 0.5s ease-in-out;
 }
-
 
 article .block .icon {
     text-align: center;
@@ -234,7 +233,6 @@ section.about-product {
     top: 200px;
     height: 100vh;
     width: 100vw;
-    padding: 100px 0px;
 }
 
 section .container-product {
@@ -321,13 +319,16 @@ section.resource-product {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 100px 0;
 }
 
 section .container-resource-feature {
     display: flex;
+}
+
+section .resource-tittle {
+    padding-bottom: 50px;
 }
 
 section .resource-tittle h2 {
@@ -485,7 +486,7 @@ section .carrosel {
 /* sessão de contato */
 
 section.contact {
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -602,7 +603,21 @@ footer .footer-links ul li a {
     line-height: 55px;
     margin: 5px 5px;
     border-radius: 50%;
-    color: #000;
     box-shadow: 0 5px 15px #888;
-    
+    color: #fff;
+}
+.footer-links #facebook {
+    background-color: #00f;
+}
+.footer-links #twitter {
+    background-color: #00c6f7;
+}
+.footer-links #linkedin {
+    background-color: #007bb5;
+}
+.footer-links #google {
+    background-color: #d1062c;
+}
+.footer-links #instagram {
+    background-color: #E1306C;
 }
