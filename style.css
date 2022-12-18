@@ -226,18 +226,21 @@ article .container-box .box-position {
 
 
 
-/* terceira sessão do site */
+/* terceira sessão - sobre o produto */
 
 section.about-product {
     position: relative;
-    top: 200px;
-    height: 100vh;
-    width: 100vw;
+    top: 100px;
+    background-color:#5789ff;
 }
 
 section .container-product {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100vw;
 }
 
 section .container-product img {
@@ -260,15 +263,17 @@ section div .container-product-title {
 
 section div .container-product-title h2 {
     font-family: 'Roboto'sans-serif;
-    color: #242424;
+    color: #fff;
     font-size: 2.5rem;
-    font-weight: 900;
+    font-weight: 700;
     text-align: center;
+    margin-top: 50px;
 }
 
 section div .container-product-title p {
     margin: 20px 0;
     font-size: 1.2rem;
+    color: #fff;
 }
 
 section div .container-product-banner {
@@ -286,19 +291,21 @@ section div .container-product-banner {
 .container-product-banner div li .icon {
     text-align: center;
     font-size: 3.5rem;
-    color: #5789ff;
+    color: #fff;
     margin-right: 20px;
 }
 
 .container-product-banner div li .content h4 {
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
+    color: #fff;
 }
 
 .container-product-banner div li .content p {
     font-size: 1rem;
     font-family: 'Poppins' sans-serif;
     width: 500px;
+    color: #fff;
 }
 
 section .container-product .about-banner {
@@ -311,7 +318,7 @@ section .container-product div img {
     padding: 0 100px;
 }
 
-/* Terceira sessão do site */
+/* Terceira sessão - recursos do produto */
 
 section.resource-product {
     height: 100vh;
@@ -321,6 +328,7 @@ section.resource-product {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
 section .container-resource-feature {
@@ -385,11 +393,15 @@ section div .resource-content ul li ion-icon {
     margin: 0 30px;
 }
 
-/* quarta sessão - carrosel de produtos */
+/* quarta sessão - produtos disponiveis */
+
+.products-available {
+    background-color: #5789ff;
+}
 
 section .products-description h1 {
     font-family: 'Poppins', sans-serif;
-    color: #242424;
+    color: #fff;
     font-size: 2.5rem;
     font-weight: 900;
     text-align: center;
@@ -398,89 +410,124 @@ section .products-description h1 {
 section .products-description p {
     font-size: 1.2rem;
     font-family: 'Poppins' sans-serif;
+    color: #fff;
     margin-top: 15px;
     text-align: center;
+    margin-bottom: 50px;
 }
 
-section .container-carrosel  {
-    position: relative;
+section .container-products  {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
     height: 100vh;
     width: 100vw;
 }
 
-section .carrosel {
+section .cards {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 70vh;
-    width: 100vw;
     gap: 20px;
 }
 
-.carrosel .slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    flex-grow: 1;
-    border: .5px solid #5789ff;
-    border-radius: 10px;
-    max-width: 350px;
-    height: 600px;
-}
-.carrosel .slide:hover {
-    border: 3px solid #5789ff;
-    transition: .3s ease-in-out;
+.cards .slide {
+    border-radius: 1rem;
+    background-color: #fff;
+    width: 350px;
+    height: 500px;
+    padding: 4rem 2rem 0;
+    overflow-y: hidden;
+    box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.3);
 }
 
-
-.carrosel .slide img {
-    max-width: 250px;
+.cards .slide img {
+    position: absolute;
+    width: 220px;
+    margin-left: 30px;
     height: auto;
+    filter: drop-shadow(5px 10px 15px rgba(8,9,13,.4));
 }
 
-.carrosel .slide h1 {
+.cards .slide .slide-data {
+    transform: translateY(21rem);
+    text-align: center;
+}
+
+.cards .slide h1 {
     font-family: 'Poppins', sans-serif;
     color: #242424;
-    font-size: 1.75rem;
     font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
 }
-
-.carrosel .slide p {
+.cards .slide span {
     font-family: 'Poppins', sans-serif;
     color: #242424;
-    font-size: 1.75rem;
-    font-weight: 600;
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
 }
 
-.carrosel .slide a {
+.cards .slide p {
+    font-family: 'Poppins', sans-serif;
+    color: #242424;
+    font-size: .875rem;
+    margin-bottom: 1.25rem;
+    opacity: 0;
+}
+
+.cards .slide a {
     border: 1px solid #5789ff;
-    border-radius: 5px;
-    padding: 15px 30px;
+    border-radius: .5rem;
+    padding: .875rem 1.25rem;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     color: #5789ff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
+    transition: 1s;
+    opacity: 0;
+    position: relative;
+    left: 25%;
 }
-
-.carrosel .slide a:hover {
+.cards .slide a:hover {
     background-color: #5789ff;
     color: #fff;
-    transition: .2s ease-in-out;
 }
 
-.carrosel-button button {
-    border: transparent;
-    font-size: 2.5rem;
-    cursor: pointer;
-    padding-left: 10px;
-    color: #5789ff;
+.slide img,
+.slide-data,
+.slide h1,
+.slide span,
+.slide p {
+    transition: .5s;
+}
+/* efeitos dos cards*/
+
+div.slide:hover .card-img {
+    transform: translateY(-100px) rotate(15deg);
+}
+
+div.slide:hover div.slide-data {
+    transform: translateY(200px)
+}
+
+div.slide:hover .title {
+    transform: translateX(-40px);
+}
+
+div.slide:hover .preco {
+    transform: translateX(-30px);
+}
+
+div.slide:hover p, div.slide:hover .button {
+    transition-delay: .2s;
+    opacity: 1;
 }
 
 /* sessão de contato */
