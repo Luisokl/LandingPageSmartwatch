@@ -7,8 +7,8 @@
 
 .container-header {
     display: flex;
-    justify-content: space-around;
-    height: 8vh;
+    justify-content: space-evenly;
+    height: 70px;
     width: 100%;
 }
 
@@ -66,8 +66,10 @@ header nav ul li a:hover {
     transition: .3s;
 }
 
+/* Home-area */
+
 #home-area {
-    height: 100vh;
+    height: calc(100vh - 50px);
     position: relative;
     display: flex;
     justify-content: center;
@@ -136,7 +138,7 @@ header nav ul li a:hover {
     }
 }
 
-/* segunda sessão do site */
+/* section feature */
 
 section.feature{
     position: relative;
@@ -187,6 +189,11 @@ article .container-box {
     margin-left: 25px;
 }
 
+article .block ion-icon {
+    font-size: 3.5rem;
+    color: #5789ff;
+}
+
 article.about-colum div .block {
     margin: 20px;
     height: 350px;
@@ -201,11 +208,7 @@ article.about-colum div .block:hover {
     transition: all 0.5s ease-in-out;
 }
 
-article .block .icon {
-    text-align: center;
-    font-size: 3.5rem;
-    color: #5789ff;
-}
+
 
 article .block h4 {
     font-size: 1.2rem;
@@ -226,7 +229,7 @@ article .container-box .box-position {
 
 
 
-/* terceira sessão - sobre o produto */
+/* section about product */
 
 section.about-product {
     position: relative;
@@ -318,7 +321,7 @@ section .container-product div img {
     padding: 0 100px;
 }
 
-/* Terceira sessão - recursos do produto */
+/* Section resource-product */
 
 section.resource-product {
     height: 100vh;
@@ -393,7 +396,7 @@ section div .resource-content ul li ion-icon {
     margin: 0 30px;
 }
 
-/* quarta sessão - produtos disponiveis */
+/* sessão - products-available */
 
 .products-available {
     background-color: #5789ff;
@@ -437,10 +440,9 @@ section .cards {
 .cards .slide {
     border-radius: 1rem;
     background-color: #fff;
-    width: 350px;
+    width: 330px;
     height: 500px;
     padding: 4rem 2rem 0;
-    overflow-y: hidden;
     box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.3);
 }
 
@@ -493,7 +495,7 @@ section .cards {
     transition: 1s;
     opacity: 0;
     position: relative;
-    left: 25%;
+    top: 10px;
 }
 .cards .slide a:hover {
     background-color: #5789ff;
@@ -530,7 +532,7 @@ div.slide:hover p, div.slide:hover .button {
     opacity: 1;
 }
 
-/* sessão de contato */
+/* section contact */
 
 section.contact {
     height: 80vh;
